@@ -86,8 +86,6 @@ def make_data(
 
     sig.insert(0, "comp", P.complementarity("global"))
     sig.insert(0, "sim", P.similarity("global"))
-    sig.insert(0, "density", graph.density())
-    sig.insert(0, "n_nodes", graph.vcount())
     insert_metadata(sig, graph)
 
     # Prepare data for degree correlations
