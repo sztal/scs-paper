@@ -1,20 +1,18 @@
 Code for paper<br>
-_Structural complementarity and similarity:
-linking relational principles to network motifs_
+_Structural measures of similarity and complementarity
+in complex networks_
 =================================================================
 
-    Talaga, S., & Nowak, A. (2022).
-    Structural complementarity and similarity:
-    linking relational principles to network motifs.
-    arXiv preprint arXiv:2201.03664.
+> Talaga, S., & Nowak, A. (2022). Structural measures of similarity
+> and complementarity in complex networks. Scientific Reports, (in press).
 
-This repository allows replication of all results presented in the 
+This repository allows replication of all results presented in the
 [paper](https://arxiv.org/abs/2201.03664).
 The code should run for Python 3.8+. Main dependencies are specified
 in `requirements.txt`. The core methods including _PathCensus_ algorithms
 and structural coefficients are implemented in `pathcensus` package
-It will be distributed through PyPI upon publication and currently
-can be accessed and installed directly from its
+which is available at PyPI like any standard Python package.
+Its source code can be accessed from a
 [Github repo](https://github.com/sztal/pathcensus).
 It is a full-featured package with detailed documentation and an extensive
 suite of unit tests.
@@ -44,8 +42,8 @@ defined as `Makefile` commands to facilitate a seemless reproduction.
 
     The `Makefile` used here is Unix-compatible. Windows users may have to
     define their own `makefile.bat` or just run command by hand.
-    However, this should be easy as implementation of all the steps is defined
-    transparently in the original `Makefile`.
+    However, this should be easy as the implementation of all the steps
+    is defined transparently in the original `Makefile`.
 
 Project structure
 -----------------
@@ -62,7 +60,7 @@ Project structure
     │   ├── _ns.py            <- Downloader class for the Netzschleuder repostitory
     │   ├── _argparse.py      <- Unimportant utility; do not touch
     │   └── utils.py          <- Custom utility functions
-    ├── LICENCE
+    ├── LICENSE
     ├── Makefile            <- Defines commands for replicating the analyses
     ├── README.md
     ├── requirements.txt    <- Main dependencies except `pathcensus` and `graph_tool`
@@ -127,10 +125,5 @@ with unit test coverage statistics.
 Documentation
 -------------
 
-Documentation for the `pathcensus` package can also be built and opened easily.
-
-```bash
-cd pathcensus
-pip install -r requirements-docs.txt
-make docs
-```
+Documentation is availalble at
+[Read the Docs](https://pathcensus.readthedocs.io).

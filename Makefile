@@ -22,8 +22,7 @@ env:
 	conda create --yes --name scs-paper python=3.10
 
 install-gt:
-	conda install --yes -c conda-forge graph-tool
-	conda install --yes zstandard
+	conda install --yes -c conda-forge graph-tool=2.45 zstandard=0.18.0
 
 install:
 	pip install -r requirements.txt

@@ -6,5 +6,5 @@ setup(
     version="0.1",
     description="Code repository for \"Similarity- and complementarity-driven relations in complex networks\" paper",
     author="Szymon Talaga",
-    license='BSD-3',
+    license="BSD-3",
 )

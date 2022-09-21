@@ -7,6 +7,32 @@ import igraph as ig
 from . import DATA
 
 
+def get_root_path(
+    *,
+    origin: str | bytes | os.PathLike = ".",
+    root_dir: str = "scs-paper"
+) -> Path:
+    """Get root path of the project.
+
+    Parameters
+    ----------
+    origin
+        Path to start the search from.
+    root_dir
+        Name of the root directory to look for.
+
+    Raises
+    ------
+    ValueError
+        If ``root_dir`` cannot be found.
+    """
+    path = Path(origin).absolute()
+    while path.stem != root_dir:
+        if path is path.parent:
+            raise ValueError(f"'{root_dir}' cannot be found")
+        path = path.parent
+    return path
+
 def list_graphs(
     dataset: str,
     *,
