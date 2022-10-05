@@ -4,10 +4,11 @@ in complex networks_
 =================================================================
 
 > Talaga, S., & Nowak, A. (2022). Structural measures of similarity
-> and complementarity in complex networks. Scientific Reports, (in press).
+> and complementarity in complex networks. Scientific Reports, 12(1), 16580.
+> https://doi.org/10.1038/s41598-022-20710-w
 
 This repository allows replication of all results presented in the
-[paper](https://arxiv.org/abs/2201.03664).
+[paper](https://www.nature.com/articles/s41598-022-20710-w).
 The code should run for Python 3.8+. Main dependencies are specified
 in `requirements.txt`. The core methods including _PathCensus_ algorithms
 and structural coefficients are implemented in `pathcensus` package
@@ -125,5 +126,5 @@ with unit test coverage statistics.
 Documentation
 -------------
 
-Documentation is availalble at
+Documentation of the `pathcensus` package is availalble at
 [Read the Docs](https://pathcensus.readthedocs.io).
